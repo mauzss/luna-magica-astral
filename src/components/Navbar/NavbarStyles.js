@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Container } from '../../globalStyles';
 import { Link } from 'react-router-dom';
+import { Link as LinkScroll} from 'react-scroll';
 
 export const Nav = styled.nav`
 	background: transparent;
@@ -24,7 +25,7 @@ export const NavbarContainer = styled(Container)`
 	${Container}
 `;
 
-export const NavLogo = styled(Link)`
+export const NavLogo = styled(LinkScroll)`
 	color: #fff;
 	justify-self: flex-start;
 	cursor: pointer;
@@ -37,7 +38,7 @@ export const NavLogo = styled(Link)`
 
 export const NavIcon = styled.img`
 	margin-right: 1rem;
-	width: 3rem;
+	width: 4rem;
 `;
 
 export const MobileIcon = styled.div`
@@ -90,7 +91,7 @@ export const NavItem = styled.li`
 	}
 `;
 
-export const NavLinks = styled.span`
+export const NavLinks = styled(LinkScroll)`
 	color: #fff;
 	display: flex;
 	align-items: center;

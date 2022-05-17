@@ -5,8 +5,6 @@ import Navbar from './components/Navbar/Navbar';
 
 //Pages
 import Home from "./pages/Home";
-import SignUp from "./pages/SignupPage";
-import Pricing from "./pages/PricingPage";
 import PageNotFound from "./pages/PageNotFound";
 
 function App() {
@@ -17,8 +15,6 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/pricing" element={<Pricing />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>

@@ -12,14 +12,12 @@ import {
 	NavLinks,
 	NavItem,
 } from './NavbarStyles.js';
-import { useLocation, useNavigate } from 'react-router-dom';
 import { data } from '../../data/NavbarData';
+
+import logoP from '../../assets/logo-demon.png';
 
 const Navbar = () => {
 	const [show, setShow] = useState(false);
-
-	let navigate = useNavigate();
-	let location = useLocation();
 
 	const handleClick = () => {
 		setShow(!show);
@@ -34,11 +32,9 @@ const Navbar = () => {
 	};
 
 	const closeMobileMenu = (to, id) => {
-		if (id && location.pathname === '/') {
+		if (id === '/') {
 			scrollTo(id);
 		}
-
-		navigate.push(to);
 		setShow(false);
 	};
 
@@ -47,17 +43,24 @@ const Navbar = () => {
 			<Nav>
 				<NavbarContainer>
 					<NavLogo to="/">
-						<NavIcon src="./assets/logo.png" alt="logo" />
+						<NavIcon src={logoP} alt="logo" />
 						Luna Magica
 					</NavLogo>
 					<MobileIcon onClick={handleClick}>
 						{show ? <FaTimes /> : <CgMenuRight />}
 					</MobileIcon>
 					<NavMenu show={show}>
-						{data.map((el, index) => (
+						{data.map((ele, index) => (
 							<NavItem key={index}>
-								<NavLinks onClick={() => closeMobileMenu(el.to, el.id)}>
-									{el.text}
+								<NavLinks
+									to={ele.to}
+									spy={true}
+									smooth={true}
+									offset={50}
+									duration={500}
+									onClick={() => closeMobileMenu(ele.to, ele.id)}
+								>
+									{ele.text}
 								</NavLinks>
 							</NavItem>
 						))}
