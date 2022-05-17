@@ -15,6 +15,7 @@ export const Container = styled.div`
 	margin-right: auto;
 	margin-left: auto;
 	padding: 0 50px;
+
 	@media screen and (max-width: 960px) {
 		padding: 0 30px;
 	}
@@ -60,6 +61,7 @@ export const Section = styled.section`
 	height: ${({ height }) => (height ? height : 'auto')};
 	max-height: ${({ maxHeight }) => (maxHeight ? maxHeight : 'auto')};
 	min-height: ${({ minHeight }) => (minHeight ? minHeight : 'auto')};
+
 	@media screen and (max-width: 768px) {
 		padding: ${({ smPadding }) => (smPadding ? smPadding : '70px 0')};
 	}
@@ -111,6 +113,7 @@ export const Button = styled.button`
 	cursor: pointer;
 	overflow: hidden;
 	position: relative;
+
 	&:before {
 		background: #fff;
 		content: '';
@@ -124,9 +127,11 @@ export const Button = styled.button`
 		height: 0%;
 		transform: translate(-50%, -50%) rotate(45deg);
 	}
+
 	&:hover:before {
 		height: 500%;
 	}
+
 	&:hover {
 		color: black;
 	}

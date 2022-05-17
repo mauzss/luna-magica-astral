@@ -1,6 +1,7 @@
 import React from "react";
 import GlobalStyle from "./globalStyles";
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
 
 //Pages
 import Home from "./pages/Home";
@@ -13,6 +14,7 @@ function App() {
     
     <BrowserRouter>
       <GlobalStyle />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<SignUp />} />
