@@ -9,10 +9,12 @@ import {
 	HeroButton,
 } from './HeroStyles';
 
+import VideoBackground from '../../assets/spaceWormHoleLoop.mp4';
+
 const Hero = () => {
 	return (
 		<HeroSection>
-			<HeroVideo src="./assets/spaceWormHoleLup.mp4" autoPlay muted repeat={true} />
+			<HeroVideo src={VideoBackground} autoPlay Loop muted/>
 			<Container>
 				<MainHeading>Tu suerte esta segura con nosotros.</MainHeading>
 

@@ -17,7 +17,6 @@ export const HeroVideo = styled.video`
 	top: 0;
 	position: absolute;
 	z-index: -1;
-	animation-iteration-count: infinite;
 `;
 
 export const HeroText = styled.p`
