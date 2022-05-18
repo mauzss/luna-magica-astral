@@ -1,9 +1,9 @@
 import React from "react";
-import Carousel from '../components/Carousel/Carousel';
 import Tarot from '../components/Tarot/Tarot';
 import Features from '../components/Features/Features';
 import Hero from '../components/Hero/Hero';
 import Zodiacal from "../components/Zodiaco/Zodiacal";
+import Footer  from '../components/Footer/Footer';
 
 const Home = () => {
     return(
@@ -12,7 +12,7 @@ const Home = () => {
 			<Features />
 			<Zodiacal />
 			<Tarot />
-			<Carousel />
+			<Footer />
 		</>
     )
 };

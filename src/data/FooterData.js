@@ -29,18 +29,14 @@ export const footerSocialData = [
 export const footerData = [
 	{
 		title: 'Main',
-		links: ['Blog', 'FAQs', 'Support', 'About us'],
+		links: ['Blog', 'Support', 'About us'],
 	},
 	{
 		title: 'Product',
-		links: ['Login', 'Personal', 'Business', 'Team'],
-	},
-	{
-		title: 'Press',
-		links: ['Logos', 'Events', 'Stories', 'Office'],
+		links: ['praesidium', 'Hexes', 'spiritus ducibus'],
 	},
 	{
 		title: 'Legal',
-		links: ['GDPR', 'Privacy Policy', 'Terms of Service', 'Disclaimer'],
+		links: ['Privacy Policy', 'Terms of Service', 'Disclaimer'],
 	},
 ];
