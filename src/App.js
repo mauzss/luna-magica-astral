@@ -1,23 +1,25 @@
 import React from "react";
 import GlobalStyle from "./globalStyles";
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import Navbar from './components/Navbar/Navbar';
 
 //Pages
-import Home from "./pages/Home";
-import PageNotFound from "./pages/PageNotFound";
+import Navbar from './components/Navbar/Navbar';
+import Hero from "./components/Hero/Hero";
+import Features from "./components/Features/Features";
+import Zodiacal from "./components/Zodiaco/Zodiacal";
+import Tarot from "./components/Tarot/Tarot";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-    
-    <BrowserRouter>
+    <div>
       <GlobalStyle />
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="*" element={<PageNotFound />} />
-      </Routes>
-    </BrowserRouter>
+      <Hero />
+      <Features />
+      <Zodiacal />
+      <Tarot />
+      <Footer />
+    </div>
   );
 }
 
