@@ -49,6 +49,15 @@ export const ButtonZodiacal = styled.button`
 	}
 `;
 
+export const TitleZodiacal = styled.h3`
+	text-align: center;
+	font-size: clamp(1.3rem, 13vw, 3.1rem);
+	line-height: 1.06;
+	letter-spacing: 0.4rem;
+	margin: auto;
+	color: ${({ inverse }) => (inverse ? '#FFFFFF' : '#000000')};
+`;
+
 export const TextZodiacal = styled.p`
 	position: relative;
 	padding: 0 0 20px;
