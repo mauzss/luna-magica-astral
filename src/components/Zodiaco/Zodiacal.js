@@ -104,18 +104,18 @@ const Zodiacal = (diaE, mesE) => {
 		}
 
 		let titulo = `${data.horoscopo[numero]['signo']}`;
-		let mensaje = `Fecha": ${data.horoscopo[numero]['fecha']}<br>
-						Descripcion: ${data.horoscopo[numero]['descripcion']}<br>
-						Simboliza: ${data.horoscopo[numero]['simboliza']}<br>
-						Elemento: ${data.horoscopo[numero]['elemento']}<br>
-						Estacion: ${data.horoscopo[numero]['estacion']}<br>
-						Caracter: ${data.horoscopo[numero]['caracter']}<br>
-						A favor: ${data.horoscopo[numero]['a_favor']}<br>
-						En contra: ${data.horoscopo[numero]['en_contra']}<br>
-						Dia de la semana: ${data.horoscopo[numero]['dia_semana']}<br>
-						Color: ${data.horoscopo[numero]['color']}"<br>
-						Planeta: ${data.horoscopo[numero]['planeta']}<br>
-						Piedras: ${data.horoscopo[numero]['piedras']}<br>`;
+		let mensaje = `<strong>Fecha":</strong> ${data.horoscopo[numero]['fecha']}<br><br>
+		<strong>Descripcion:</strong> ${data.horoscopo[numero]['descripcion']}<br><br>
+		<strong>Simboliza:</strong> ${data.horoscopo[numero]['simboliza']}<br><br>
+		<strong>Elemento:</strong> ${data.horoscopo[numero]['elemento']}<br><br>
+		<strong>Estacion:</strong> ${data.horoscopo[numero]['estacion']}<br><br>
+		<strong>Caracter:</strong> ${data.horoscopo[numero]['caracter']}<br><br>
+		<strong>A favor:</strong> ${data.horoscopo[numero]['a_favor']}<br><br>
+		<strong>En contra:</strong> ${data.horoscopo[numero]['en_contra']}<br><br>
+		<strong>Dia de la semana:</strong> ${data.horoscopo[numero]['dia_semana']}<br><br>
+		<strong>Color:</strong> ${data.horoscopo[numero]['color']}"<br><br>
+		<strong>Planeta:</strong> ${data.horoscopo[numero]['planeta']}<br><br>
+		<strong>Piedras:</strong> ${data.horoscopo[numero]['piedras']}<br><br>`;
 
 		document.getElementById('titleHoroscopo').innerHTML = `${titulo}`;
 		document.getElementById('textHoroscopo').innerHTML = `${mensaje}`;

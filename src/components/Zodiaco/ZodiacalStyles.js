@@ -16,8 +16,8 @@ export const FeatureTextWrapper = styled.div`
 `;
 
 export const SelectZodiacal = styled.select`
-	margin: 10px;
-	padding: 10px;
+	margin: 7px;
+	padding: 7px;
 	background-color: white;
 	width: 20%;
 	height: 20%;
@@ -32,10 +32,10 @@ export const LabelZodiacal = styled.label`
 `;
 
 export const ButtonZodiacal = styled.button`
-	margin: 10px;
-	padding: 10px;
+	margin: 7px;
+	padding: 7px;
 	background-color: white;
-	width: 10%;
+	width: 25%;
 	height: 20%;
 	justify-content: center;
 	border-color: white;
