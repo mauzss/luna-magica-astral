@@ -54,17 +54,22 @@ export const TitleZodiacal = styled.h3`
 	font-size: clamp(1.3rem, 13vw, 3.1rem);
 	line-height: 1.06;
 	letter-spacing: 0.4rem;
-	margin: auto;
+	margin: 10px;
+	padding: 10px;
+	text-shadow: 3px 3px 3px #666699;
+	text-transform: uppercase;
 	color: ${({ inverse }) => (inverse ? '#FFFFFF' : '#000000')};
 `;
 
 export const TextZodiacal = styled.p`
+	margin: 20px 10px 20px 10px;
+	padding: 20px 10px 20px 10px;
 	position: relative;
-	padding: 0 0 20px;
 	margin-bottom: 4rem;
+	text-align: justify;
+	text-indent: 0px;
 	font-size: 1.1rem;
 	line-height: 1.06;
 	letter-spacing: 0.1rem;
-	margin: auto;
 	color: ${({ inverse }) => (inverse ? '#FFFFFF' : '#000000')};
 `;
