@@ -4,13 +4,14 @@ import { Column, Row } from '../../globalStyles';
 
 export const FooterContainer = styled.div`
 	background-color: #101522;
-	padding: 4rem 0 2rem 0;
+	padding: 4rem 0rem 2rem 0rem;
 `;
 
 export const FooterWrapper = styled.div`
 	max-width: 1280px;
 	margin-left: auto;
 	margin-right: auto;
+	padding-left: 2rem;
 `;
 
 export const FooterSubscription = styled.section`
