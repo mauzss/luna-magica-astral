@@ -15,7 +15,7 @@ function App() {
       <GlobalStyle />
       <Navbar />
       <Hero />
-      <Features />
+      {/*<Features />*/}
       <Zodiacal />
       <Tarot />
       <Footer />
