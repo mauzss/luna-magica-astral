@@ -15,14 +15,14 @@ const Hero = () => {
 		<HeroSection>
 			<HeroVideo src={VideoBackground} autoPlay loop muted/>
 			<Container>
-				<MainHeading>Tu suerte esta segura con nosotros.</MainHeading>
+				<MainHeading>Tu suerte esta segura con nosotros</MainHeading>
 
 				<HeroText>
-					Nosotros proveemos la mejor lectura de cartas en ingles.
+					Nosotros proveemos la mejor lectura de cartas
 				</HeroText>
 				<ButtonWrapper>
 					<Link
-						to="about"
+						to="horoscopo"
 						spy={true}
 						smooth={true}
 						hashSpy={true}
