@@ -89,7 +89,7 @@ export const FeatureText = styled.p`
 	font-size: 0.9rem;
 	line-height: 1.73;
 	letter-spacing: 0.5px;
-	color: #626881;
+	color: white;
 
 	@media screen and (max-width: 768px) {
 		display: none;
