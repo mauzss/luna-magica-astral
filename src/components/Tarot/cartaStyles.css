@@ -60,9 +60,22 @@
     border-radius: 15px;
   }
 
-  #cristal-button{
-    background-image: url(../../assets/sello-mistico.png);
-    width: 20px;
-    height: 20px;
-    background-color: aqua;
+  .cristal-button{
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+    margin-bottom: -30px;
+  }
+
+  .cristal-button:hover {
+    box-shadow: 0 0 32px 0px #5f0d85;
+    border-radius: 50%;
+  }
+
+  .button-text{
+    font-weight: 600;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    color: white;
   }

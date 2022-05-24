@@ -22,7 +22,7 @@ export const SelectZodiacal = styled.select`
 	width: 20%;
 	height: 20%;
 	justify-content: center;
-	box-shadow: 0 0 35px 8px #666699;
+	box-shadow: 0 0 20px 4px #666699;
 	border: none;
 `;
 
@@ -39,10 +39,11 @@ export const ButtonZodiacal = styled.button`
 	height: 20%;
 	justify-content: center;
 	border-color: white;
-	border-radius: 10px;
-	border: none;
+	border-radius: 20px;
+	border: 1px;
+	border-style: solid;
 	outline: none;
-	background-image: linear-gradient(to right, #003d66, #403ae3);
+	background-image: linear-gradient(to right, #29004a, #5b00a6);
 	color: white;
 	:hover {
 		box-shadow: 0 0 35px 8px #666699;

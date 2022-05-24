@@ -13,6 +13,7 @@ import {
 import './cartaStyles.css';
 
 import CardBack from '../../assets/reverse-card.jpg';
+import CristalButton from '../../assets/bola-cristal-universe.png';
 let card1 = CardBack;
 let card2 = CardBack;
 let card3 = CardBack;
@@ -95,8 +96,12 @@ const Tarot = ({ img, alt }) => {
 		>
 			<Container>
 				<FeatureTextWrapper>
-					<FeatureTitle inverse={true}>Tiradas de Tarot</FeatureTitle>
-					<button onClick={handleClick}><span id='cristal-button'>Tirar las cartas</span></button>
+					<FeatureTitle inverse={true}>
+						<p>Tiradas de Tarot</p>
+						<input type="image" alt='button' className='cristal-button' src={CristalButton} onClick={handleClick}/>
+						<br/><span className='button-text'>Prergunta tu suerte</span>
+					</FeatureTitle>
+								
 				</FeatureTextWrapper>
 				<FeatureWrapper>
 					<FeatureColumn>

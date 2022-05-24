@@ -39,7 +39,7 @@ export const FeatureColumn = styled(motion.div)`
 	align-items: center;
 	background: #302f3b;
 	padding: 10px;
-	box-shadow: 0 0 32px 8px #d0d0d0;
+	box-shadow: 0 0 20px 5px #d0d0d0;
 	border-radius: 20px;
 `;
 
